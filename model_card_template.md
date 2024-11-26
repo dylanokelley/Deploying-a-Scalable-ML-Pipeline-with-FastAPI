@@ -5,7 +5,7 @@
 This model was created as a project for Udacity as part of Western Governors University
 Data Analytics program. The model utilizes the RandomForestClassifier, produced by Scikit-Learn.
 
-## Intended Use Case
+## Intended Use Cases
 
 This model is used to predict if an individual makes more or less than $50,000 a year based on several idenfying attributes, which are included in the census data set. Although this model was created for the specific use of my degree program, it can be applied in other setting.
 
