@@ -12,9 +12,8 @@ from ml.model import (
     save_model,
     train_model,
 )
-#loading data from my project path from git clone
-project_path = "/Users/dylanokelley/Deploying-a-Scalable-ML-Pipeline-with-FastAPI"
-data_path = os.path.join(project_path, "data", "census.csv")
+#Loding file
+data_path = 'data/census.csv'
 print(data_path)
 data = pd.read_csv(data_path)
 
@@ -59,9 +58,9 @@ X_test, y_test, _, _ = process_data(
 model = train_model(X_train, y_train)
 
 # save the model and the encoder
-model_path = os.path.join(project_path, "model", "model.pkl")
+model_path = 'model/model.pkl'
 save_model(model, model_path)
-encoder_path = os.path.join(project_path, "model", "encoder.pkl")
+encoder_path = 'model/encoder.pkl'
 save_model(encoder, encoder_path)
 
 # load the model
