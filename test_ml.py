@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from ml.data import process_data
 from ml.model import load_model
-from train_model import model_path
+from train_model import model_path, data_path
 
 
 def test_rf_classifier():
@@ -21,8 +21,7 @@ def test_for_null():
     """
     Testing for Null Values, as these could severely alter the outcome of ML models
     """
-
-    data_path = 'data/census.csv'
+    #Here as well
     data = pd.read_csv(data_path)
     assert sum(data.isnull().sum()) == 0
 
